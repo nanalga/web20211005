@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="../icon/css/all.css" rel="stylesheet"> 
+    <title>flexbox연습2</title>
+    <style>
+        .top-container {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 10px;
+        }
+        .top-left-menu {
+            display: flex;
+            align-items: center;
+        }
+        .top-left-menu > .image {
+            font-size: 32px;
+            color: gold;
+            padding-right: 10px;
+        }
+        .top-left-menu > .menu {
+            font-weight: bold;
+            color: green;
+            font-size: 20px;
+        }
+        .login {
+            color: white;
+            font-weight: bold;
+            padding: 10px;
+            background-color: green;
+            border-radius: 15px;
+        }
+
+        .menu-container{
+            display: flex;
+            justify-content: space-between;
+            background-color: black;
+        }
+        .left-menu{
+            display: flex;
+        }
+        .right-menu {
+            display: flex;
+        }
+        .menu-item {
+            padding: 7px 5px;
+            color: white;
+            font-weight: bold;
+        }
+        .menu-item:hover {
+            background-color: green;
+        }
+
+        .main-container {
+            display: flex;
+            margin-top: 5px;
+        }
+        .side-content {
+            background-color: rgba(199, 199, 199, 0.533);
+
+        }
+        .side-content > .side-menu:hover {
+            background-color: green;
+        }
+        .side-menu, .side-ad {
+            width: 130px;
+            padding-left: 15px;
+            padding-top: 20px;
+            padding-bottom: 10px;
+        }
+        .main-content {
+            flex-grow: 1;
+            margin: 0px 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 상단 메뉴 -->
+    <div class="top-container">
+        <div class="top-left-menu">
+            <div class="image"><i class="far fa-star"></i></div>
+            <div class="menu">menu <i class="fas fa-caret-down"></i></div>
+        </div>
+        <div class="login">Log In</div>
+    </div>
+    <!-- Bar MENU -->
+    <div class="menu-container">
+        <div class="left-menu">
+            <div class="menu-item"><i class="fas fa-bars"></i></div>
+            <div class="menu-item"><i class="fas fa-home"></i></div>
+            <div class="menu-item">HTML</div>
+            <div class="menu-item">CSS</div>
+            <div class="menu-item">JAVASCRIPT</div>
+        </div>
+
+        <div class="right-menu">
+            <div class="menu-item"><i class="fas fa-adjust"></i></div>
+            <div class="menu-item"><i class="fas fa-globe-americas"></i></div>
+            <div class="menu-item"><i class="fas fa-search"></i></div>
+        </div>
+    </div>
+
+    <!-- main container -->
+    <div class="main-container">
+        <div class="side-content">
+            <div class="side-menu">Lorem.</div>
+            <div class="side-menu">Sed.</div>
+            <div class="side-menu">Inventore?</div>
+            <div class="side-menu">Accusamus?</div>
+            <div class="side-menu">Ipsum.</div>
+            <div class="side-menu">Voluptatum.</div>
+            <div class="side-menu">Nemo?</div>
+            <div class="side-menu">Voluptates.</div>
+            <div class="side-menu">Nobis.</div>
+            <div class="side-menu">Excepturi.</div>
+        </div>
+
+        <div class="main-content">
+            <h1>Lorem, ipsum dolor.</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione eos, reprehenderit praesentium explicabo repellat molestias quam omnis laboriosam ipsum ullam libero similique magnam debitis sit esse distinctio deleniti obcaecati architecto.</p>
+            <h1>Optio, fuga ex.</h1>
+            <p>Vitae illo optio vel cum eveniet ullam commodi fugit modi suscipit labore earum corporis beatae in natus nihil nobis inventore eaque nemo, reiciendis impedit iste hic corrupti veniam eligendi. Unde!</p>
+            <h1>Quis, veniam in.</h1>
+            <p>Aut error velit deleniti quas aliquid pariatur distinctio inventore nam, minus consequuntur neque, incidunt tempore quis? Dignissimos in expedita necessitatibus, reiciendis iure, similique adipisci modi, provident asperiores repellendus incidunt! Amet?</p>
+            <h1>Quisquam, possimus facere.</h1>
+            <p>Harum exercitationem quis culpa minima voluptas illo at vitae molestias totam dolor sequi debitis porro veniam, corporis nam ut, quod voluptates! Earum, eos? Voluptates molestiae doloremque, vero ipsum maxime repellendus!</p>
+            <h1>Facilis, nobis in!</h1>
+            <p>Sed, dignissimos. Nemo laboriosam sequi minus necessitatibus corrupti consectetur. Fugiat quis et ex asperiores porro maiores minus, fugit ducimus voluptate inventore amet iure aliquam eaque voluptates facilis dolores ea. At.</p>
+            <h1>Suscipit, molestiae voluptatibus.</h1>
+            <p>Reprehenderit doloribus nemo perspiciatis dicta ipsam laudantium eum alias, quae saepe. Hic, voluptatum. Aspernatur iste, doloribus quibusdam illo eaque non a eius similique fuga hic repudiandae dolore expedita aut asperiores!</p>
+        </div>
+
+        <div class="side-ad">
+            <h1>광고주 모집합니다.</h1>
+        </div>
+    </div>
+
+</body>
+</html>
