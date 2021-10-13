@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="../icon/css/all.css" rel="stylesheet">
+    <title>javascript</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <!-- button>i.far.fa-thumbs-up -->
+    <button><i class="far fa-thumbs-up"></i><span>0</span></button>
+    <script>
+        document.querySelector("i").onclick=function(){
+            let cnt = document.querySelector("span").innerHTML;
+            cnt = parseInt(cnt) + 1;
+
+            document.querySelector("span").innerHTML = cnt;
+        }
+    </script>
+</body>
+</html>

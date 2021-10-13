@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="../icon/css/all.css" rel="stylesheet">
+    <title>drop down</title>
+    <style>
+        .main-menu {
+            display: flex;
+            position: relative;
+            background-color: black;
+            color: white;
+        }
+        .main-menu > .main-menu-item {
+            padding: 10px;
+        }
+        .sub-menu-item {
+            position: absolute;
+            background-color: rgb(252, 251, 229);
+            color: black;
+            display: none;
+            width: 130px;
+        }
+        #item-drop:hover{
+            background-color: red;
+        }
+        .main-menu-item:hover > .sub-menu-item {
+            display: block;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            top: 44px;
+            padding: 10px;
+            width: 80px;
+        }
+        .sub-menu-item>.sub-menu:hover {
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-menu">
+        <div class="main-menu-item">
+            Home
+        </div>
+        <div class="main-menu-item" id="item-drop">
+            News
+        <div class="sub-menu-item">
+            <div class="sub-menu">link1</div>
+            <div class="sub-menu">link2</div>
+            <div class="sub-menu">link3</div>
+        </div>
+            
+        </div>
+        <div class="main-menu-item" id="item-drop">
+            Dropdown<i class="fas fa-caret-down"></i>
+        <div class="sub-menu-item">
+            <div class="sub-menu">link1</div>
+            <div class="sub-menu">link2</div>
+            <div class="sub-menu">link3</div>
+        </div>    
+        </div>
+    </div>
+</body>
+</html>

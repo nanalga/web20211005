@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="../icon/css/all.css" rel="stylesheet">
+    <title>z-index</title>
+    <style>
+        img {
+            position: absolute;
+            z-index: -1; /* position된 element만 값이 적을 수록 눈에서 멀어짐 */
+        }
+        span {
+            /* position: relative;
+            z-index: 999; */
+            color: black;
+            font-size: 24px;
+            background-color: silver;
+        }
+    </style>
+</head>
+<body>
+    <!-- div>img+span -->
+    <div><img src="benz.jpg" alt="">
+        <span>벤츠 로고</span>
+    </div>
+</body>
+</html>
