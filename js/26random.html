@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="../icon/css/all.css" rel="stylesheet">
+    <title>random</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    
+    <script>
+        // Math.random();  // 0보다 크거나 같고 1보다 작은 임의의 수 리턴
+        let a = Math.random();
+        console.log(a);
+        console.log(Math.random());
+
+        // 0 ~ 9 의 랜덤값
+        let b = Math.random() * 10;
+        console.log(b);
+        console.log(parseInt(b));
+
+        // 1 ~ 5의 랜덤값
+        let c = (Math.random() * 5)+1;
+        console.log(parseInt(c));
+
+        let c = Math.random() * 5; // 0.0~4.999
+        c = parseInt(c); // 0, 1, 2, 3, 4
+        c += 1;
+        console.log(c);
+    </script>
+</body>
+</html>
