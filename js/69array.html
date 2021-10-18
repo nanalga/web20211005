@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="../icon/css/all.css" rel="stylesheet">
+    <title>array</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <!-- input#input1+button{추가}+button{출력} -->
+    <input type="text" id="input1">
+    <button onclick="add();">추가</button>
+    <button onclick="print();">출력</button>
+    <div id="printWeb"></div>
+
+    <script>
+        let arr = [];
+
+        function add() {
+            let addArr = document.querySelector("#input1").value;
+            arr.push(addArr);
+        }
+
+        function print() {
+            let valView = document.querySelector("#printWeb");
+            valView.innerHTML = "";
+            for(let i = 0; i < arr.length; i++){
+                console.log(arr[i]);
+                valView.innerHTML += arr[i] + "<br>";
+            }
+            // document.querySelector("#printWeb").innerHTML = valView;
+        }
+        
+    </script>
+</body>
+</html>

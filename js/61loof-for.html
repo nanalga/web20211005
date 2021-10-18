@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="../icon/css/all.css" rel="stylesheet">
+    <title>for</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <!-- input#input1+button{바꾸기}+h1*5>lorem1 -->
+    <input type="text" id="input1">
+    <button onclick="changeText();">바꾸기</button>
+    <h1>
+        Lorem.
+    </h1>
+    <h1>
+        Numquam!
+    </h1>
+    <h1>
+        Sed.
+    </h1>
+    <h1>
+        Recusandae.
+    </h1>
+    <h1>
+        Dignissimos.
+    </h1>
+    <script>
+        function changeText() {
+            let valInput = document.querySelector("#input1");
+            let valChage = document.querySelectorAll("h1");
+
+            for(let i =  0; i < valChage.length; i++) {
+                valChage[i].innerHTML = valInput.value;
+            }
+        }
+    </script>
+</body>
+</html>

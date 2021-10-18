@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="../icon/css/all.css" rel="stylesheet">
+    <title>숫자 맞추기</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <!-- input+button -->
+    <input type="text">
+    <button onclick="guess();">확인</button>
+
+    <!-- h1#idresult -->
+    <h1 id="idresult"></h1>
+    <script>
+        let randomNumber = parseInt(Math.random() * 100) + 1;
+        console.log(randomNumber);
+
+        function guess() {
+            let userInputNumber = Number(document.querySelector("input").value);
+            
+            console.log("user", userInputNumber);
+            console.log("comp", randomNumber);
+
+            let h1Result = document.querySelector("#idresult");
+            let result;
+            if (userInputNumber > randomNumber) {
+                result = "더 작은 값을 입력해주세요.";
+            } else if (userInputNumber < randomNumber) {
+                result = "더 큰 값을 입력해주세요.";
+            } else {
+                result = "정답입니다."
+            }
+
+            h1Result.innerHTML = result;
+        }
+    </script>
+</body>
+</html>

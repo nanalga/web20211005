@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="../icon/css/all.css" rel="stylesheet">
+    <title>for</title>
+    <style>
+        .ball {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: burlywood;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 48px;
+            font-weight: bold;
+            margin: 10px;
+        }
+    </style>
+</head>
+<!-- button{로또}+.ball*6 -->
+<button onclick="inBall();">로또</button>
+<div class="ball"></div>
+<div class="ball"></div>
+<div class="ball"></div>
+<div class="ball"></div>
+<div class="ball"></div>
+<div class="ball"></div>
+<body>
+    
+    <script>
+        function inBall() {
+            let valBall = document.querySelectorAll(".ball");
+
+            for(let i = 0; i < valBall.length; i++) {
+                valBall[i].innerHTML = parseInt(Math.random() * 45) + 1;
+            }
+        }
+    </script>
+</body>
+</html>
