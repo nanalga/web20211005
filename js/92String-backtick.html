@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="../icon/css/all.css" rel="stylesheet">
+    <title></title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <!-- {name}+input#input1+{color}+input#input2+button{+} -->
+    name
+    <input type="text" id="input1">
+    color
+    <input type="text" id="input2">
+    <button onclick="show();">+</button>
+    <!-- ul#list1 -->
+    <ul id="list1">
+        <li style="color: blue;">
+            Lorem.
+        </li>
+    </ul>
+    <script>
+        let arr = [];
+        function show() {
+            let name = document.querySelector("#input1");
+            let color = document.querySelector("#input2");
+
+            document.querySelector("#list1").innerHTML += `<li style="color : ${color.value}"> ${name.value} </li>`;
+
+            document.querySelector("#input1").value = "";
+            document.querySelector("#input2").value = "";
+        }
+
+        // document.querySelector("button"),addEventListener("click", function () {
+        //     let text = document.querySelector("#input1").value;
+        //     let colorName = document.querySelector("#input2").value;
+
+        //     let ulElem = document.querySelector("#list1");
+
+        //     ulElem.innerHTML += `<li style = "color: ${colorName};">${tesxt}</li>`;
+
+            // document.querySelector("#input1").value = "";
+            // document.querySelector("#input2").value = "";
+        // })
+    </script>
+</body>
+</html>
