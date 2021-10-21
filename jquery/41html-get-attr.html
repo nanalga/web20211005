@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="../icon/css/all.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>html get attribute</title>
+    <style>
+        
+    </style>
+    <script>
+        $(document).ready(function() {
+            let str = $("#link1").attr("href");
+            console.log(str);
+
+            let str2 = $("#link2").attr("href");
+            console.log(str2);
+
+            let str3 = $("#link3").attr("href");
+            console.log(str3);
+        });
+    </script>
+</head>
+<body>
+    <!-- a*3#link$ -->
+    <a href="https://www.daum.net" id="link1">daum</a>
+    <a href="https://www.naver.com" id="link2">naver</a>
+    <a href="https://www.google.com" id="link3">google</a>
+    <script>
+        
+    </script>
+</body>
+</html>
