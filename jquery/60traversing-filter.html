@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="../icon/css/all.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>traversing filter</title>
+    <style>
+        
+    </style>
+    <script>
+        $(document).ready(function() {
+            $("#input1").keyup(function () {
+                let lists = $("#list1 li");
+
+                for(let i = 0; i < lists.length; i++) {
+                    let text = lists.eq(i).text();
+
+                    if(text.toLowerCase().includes($(this).val())) {
+                        lists.eq(i).show();
+                    } else {
+                        lists.eq(i).hide();
+                    }
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <!-- input#input1 -->
+    <input type="text" id="input1">
+    <!-- ul#list1>li*30>lorem5 -->
+    <ul id="list1">
+        <li>
+            Lorem ipsum dolor sit amet.
+        </li>
+        <li>
+            Nobis consequuntur quidem autem molestias!
+        </li>
+        <li>
+            Iusto excepturi possimus sit tempora.
+        </li>
+        <li>
+            Ut iste libero laboriosam quasi!
+        </li>
+        <li>
+            Natus veritatis repudiandae rerum unde.
+        </li>
+        <li>
+            Expedita accusantium debitis eligendi ex.
+        </li>
+        <li>
+            Magni facilis eos delectus autem.
+        </li>
+        <li>
+            Nesciunt doloribus repellendus mollitia distinctio.
+        </li>
+        <li>
+            Facilis, id? Laudantium, recusandae nesciunt.
+        </li>
+        <li>
+            Deleniti repellat temporibus incidunt recusandae.
+        </li>
+        <li>
+            Fugiat odit aut enim vitae!
+        </li>
+        <li>
+            Soluta velit consequatur quas deserunt.
+        </li>
+        <li>
+            Veniam enim consequatur dolorem velit.
+        </li>
+        <li>
+            Expedita alias optio nobis fugiat?
+        </li>
+        <li>
+            Quam facere molestiae fugit repellendus!
+        </li>
+        <li>
+            Nobis odit nihil distinctio voluptatibus?
+        </li>
+        <li>
+            Rerum laboriosam deleniti animi veniam.
+        </li>
+        <li>
+            Blanditiis perferendis placeat dicta non!
+        </li>
+        <li>
+            Dolorem necessitatibus nemo est voluptas!
+        </li>
+        <li>
+            Velit magnam aspernatur illum mollitia.
+        </li>
+        <li>
+            Dolor itaque libero hic ad.
+        </li>
+        <li>
+            Voluptatem asperiores iusto labore sed.
+        </li>
+        <li>
+            Voluptatem quo autem dolore odio!
+        </li>
+        <li>
+            Harum deleniti laboriosam nesciunt eveniet.
+        </li>
+        <li>
+            Quia dolores perferendis iste animi.
+        </li>
+        <li>
+            Possimus consectetur repellendus expedita. Obcaecati.
+        </li>
+        <li>
+            At quis repellendus assumenda voluptas.
+        </li>
+        <li>
+            Suscipit praesentium repudiandae ad quod.
+        </li>
+        <li>
+            Ratione reiciendis unde tempore harum!
+        </li>
+        <li>
+            Reprehenderit perspiciatis accusamus at ipsam?
+        </li>
+    </ul>
+    <script>
+        
+    </script>
+</body>
+</html>
